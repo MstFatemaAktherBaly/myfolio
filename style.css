@@ -1,0 +1,284 @@
+/* common css start */
+*{
+margin: 0;
+padding: 0;
+outline: 0;
+box-sizing: border-box;
+}
+body{
+    font-style: open sans ,sans serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section_info p{
+    font-size: 16px;
+    color: #7e8287;
+    margin: 0 auto;
+ }
+ .section_info .shape{
+    padding: 34px 0 28px;
+ }
+ .section_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+/* common css end */
+
+/* Menu section start */
+nav{
+    background-color: #02918b;
+    text-align: justify;
+}
+nav div .row{
+    align-items: center;
+}
+nav .logo{
+    width: 15%;
+} 
+nav .menu{
+    width: 85%;   
+}
+nav .menu ul{
+    justify-content: flex-end;
+}
+nav .menu ul li a{
+font-size: 12px;
+font-weight: 800;
+color: white;
+text-transform: uppercase;
+padding:26px 25px ;
+display: inline-block;
+transition: .6s;
+}
+nav .menu ul li a:hover{
+   background-color: #cfc91d;
+   color: black;
+}
+/* menu section end */
+
+/* Banner section start */
+#banner{
+    background-image: url(banner.jpg);
+    height: 728px;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+}
+#banner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0px;
+    top:0;
+    z-index: -1;
+    opacity: 0.7;
+ }
+#banner.container{
+    margin: auto 0;
+    text-align: center;
+}
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner p{
+    font-size: 18px;
+    color: white;
+}
+#banner img{
+    display: block;
+    margin:52px auto;
+}
+#banner a{
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 3px;
+    background-color: #cfc91d;
+    padding: 19px 42px;
+}
+/* Banner section end */
+
+/* About section start */
+#about{
+    text-align: center;
+    padding: 98px 0;
+}
+
+ #about .section_info p{
+    width: 880px;
+    
+    
+  }
+     #about .section_info p b{
+        font-size: 23px;
+        font-weight: 800;
+     }
+     #about .about_item{
+        width: 25%;
+        border-right: 1px solid #7e8287;
+        padding: 50px 60px;
+        margin-top: 50px;
+     }
+     #about .about_item:last-child{
+        border: none;
+     }
+     #about .about_item h5{
+        font-size: 16px;
+        font-weight: 800;
+        color: #7e8287;
+        margin: 28px 0;
+     }
+     #about .about_item p{
+        font-size: 11px;
+        color: #7e8287;
+     }
+     /* About section end */
+
+     /* service section start */
+     #service{
+        background-image: url(bacground.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 70px 0;
+     }
+     #service .inner_container{
+        width: 50%;
+     }
+     #service .service_item{
+        width: 50%;
+        font-size: 16px;
+        font-weight: 800;
+        color: #7e8287;
+        margin-top: 60px;
+        padding-right: 126px;
+     }
+     /* service section end */
+
+     /* My work section start */
+     #mywork{
+        text-align: center;
+        
+     }
+     #mywork .section_info p{
+      padding-top: 30px 0;
+      width: 680px;
+
+     }#mywork .section_info{
+        margin: 80px 0;
+     }
+  
+     #mywork .mywork_item{
+        width: 25%;
+        position: relative;
+     }
+     #mywork .mywork_item img{
+        width: 100%;
+        display: block;
+     }
+     #mywork .mywork_item .overlay{
+        position: absolute;
+        left: 28px;
+        right: 28px;
+        top: 20px;
+        bottom: 20px;
+        background-color: rgba(2,145,139,0.85);
+        text-align: center;
+        padding: 60px 20px;
+        /* opacity: 0;
+        visibility: hidden; */
+        transition: .6s;
+        /* border-radius: 50%; */
+        transform: scalex(0);
+        transform-origin: top;
+     }
+     #mywork .mywork_item:hover .overlay{
+        /* opacity: 1;
+        visibility: visible; */
+        transform: scaleX(1);
+     }
+    
+     /* css contact section start */
+     #contact{
+        text-align: center;
+     }
+     #contact .section_info{
+        margin: 80px 0;
+     }
+     #contact .contact_form{
+        background-color:#0a0a0b;
+        padding: 80px 0 0;
+     }
+     #contact .contact_form input,
+     #contact .contact_form textarea 
+     {color: #7e8287;
+        display: block;
+        margin: auto;
+        background: none;
+        padding: 18px;
+        margin-bottom: 50px;
+        border: none;
+        border-bottom: 1px solid #7e8287;
+        font-size: 16px;
+        text-align: center;
+        width: 640px;
+     }
+     #contact .contact_form input.lg,
+     #contact .contact_form textarea.lg{
+        width: 920px;
+     }
+     #contact .contact_form textarea{
+        resize: none;
+        font-style: open sans ,sans serif;
+        
+     } 
+     #contact .contact_form input::placeholder
+     #contact .contact_form textarea::placeholder
+     {
+        text-transform: uppercase;
+     }
+     #contact .contact_form button{
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 3px;
+        background-color: #cfc91d;
+        padding: 19px 42px;
+        border: none;
+        margin-bottom: 80px;
+     }
+     #contact .contact_form .footer{
+        background-color: black;
+        color: #7e8287;
+        padding: 40px 0;
+        text-align: center;
+     }
+     /* css contact section end */
